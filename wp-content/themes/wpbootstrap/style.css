@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+ 
+body { 
+    padding-top: 60px; 
+    padding-bottom: 40px;
+	margin: 0;
+	background-color: #633a15 !important; 
+	background-image: url(img/background.png); 
+	background-repeat: repeat-x;
+	/*background-position: 125px 0;*/
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.clear{
+	clear: both;
+}
+
+h1{
+	color: #FFF !important;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.box{
+	width: auto;
+	height: auto;
+	margin: 10px;
+	padding: 5px 10px;
+	/*background-color: #CCC;*/
+	background: rgb(54, 25, 25); /*For older browsers*/
+    background: rgba(204, 204, 204, .8);
+	border: solid #FFF 2px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 10px 20px 10px 5px rgba(0,0,0,.5);
+	box-shadow: 10px 20px 10px 5px rgba(0,0,0,.5);
+}
+
+.box h1{
+	color: #000 !important;
+	text-shadow: none;
+}
+
+/*Hero Text Widget Area*/
+#text-5 h1{
+	color: #FFF !important;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	text-align: center;
+}
+
+#text-5 p{
+	text-align: center;
+}
+
+/*Sidebar*/
+#text-4 h3{
+	color: #FFF !important;
+}
+#text-4 p{
+	font-weight: 700 !important;
+	color: #09C !important;
+	font-size: 1.5em;
+}
+
+/*Footer Widget*/
+#text-3{
+	color: #FFF;
+	text-align: center;
+}
+
+#bottomNav{
+	float: right;
+}
+
+#bottomNav li{
+	display: inline;
+	padding: 5px;
+}
+
+.placeholder{
+	width: auto;
+	height: 300px;
+	background-color: red;
+}
+
+/*********Home Page Styles*********/
+#slider{
+	margin: 0 auto;
+	float: right;
+	display: block;
+}
+
+.circle{
+	width: 300px;
+	height: 300px;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+	-webkit-box-shadow: 5px 10px 15px 5px rgba(0,0,0,.5);
+	box-shadow: 5px 10px 15px 5px rgba(0,0,0,.5);
+}
+
+.circle h2{
+	color: #FFF;
+	position: relative;
+	text-align: center;
+    top: 55px;
+	font-size: 24px;
+}
+
+.circle a:hover{
+	text-decoration: none;
+}
+
+.circle img{
+	position: relative;
+    top: 50px;
+	left: 110px;
+	width: 25%;
+}
+
+#underground{
+	background: #cc7272; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cc7272 0%, #cc0000 49%, #930000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc7272), color-stop(49%,#cc0000), 	color-stop(100%,#930000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cc7272 0%,#cc0000 49%,#930000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cc7272 0%,#cc0000 49%,#930000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cc7272 0%,#cc0000 49%,#930000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cc7272 0%,#cc0000 49%,#930000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc7272', endColorstr='#930000',GradientType=0 ); /* IE6-9 */
+}
+
+#underground img{
+	width: 60%;
+	left: 60px;
+	top: 60px;
+}
+
+#aboveground{
+	background: #a7cfdf; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a7cfdf 0%, #436cdb 50%, #23538a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a7cfdf), color-stop(50%,#436cdb), color-stop(100%,#23538a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a7cfdf 0%,#436cdb 50%,#23538a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a7cfdf 0%,#436cdb 50%,#23538a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a7cfdf 0%,#436cdb 50%,#23538a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a7cfdf 0%,#436cdb 50%,#23538a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
+}
+
+#electrical{
+	background: #fcf6bd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcf6bd 0%, #ddb44d 50%, #e0aa16 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcf6bd), color-stop(50%,#ddb44d), color-stop(100%,#e0aa16)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcf6bd 0%,#ddb44d 50%,#e0aa16 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcf6bd 0%,#ddb44d 50%,#e0aa16 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcf6bd 0%,#ddb44d 50%,#e0aa16 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcf6bd 0%,#ddb44d 50%,#e0aa16 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf6bd', endColorstr='#e0aa16',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*********Underground Water, Above Ground Water, and Electrical Page Styles*********/
+.inpageNav{
+	/*width: 100%*/	
+}
+
+.inpageNav li{
+	float: left;
+	display: inline;
+	padding: 5px;
+}
+
+@media all and (max-width: 975px) and (min-width: 768px){
+	.circle{
+		height: 200px;
+		width: 200px;
+	}
+	
+	.circle img{
+		left: 80px;
+		top: 15px;
+	}
+	
+	#underground img{
+		left: 40px;
+		top: 15px;
+	}
+	
+	.circle h2{
+		font-size: 1.5em;
+		top: 20px;
+	}
+}
+
+@media all and (max-width: 767px) and (min-width: 501px){
+	.circle{
+		border-radius: 20px;
+		height: 250px;
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	.circle h2{
+		font-size: 2em;
+		top: 5px;
+	}
+	
+	.circle img{
+		top: 0px;
+		left: 250px;
+		width: 15%;
+	}
+	
+	#underground img {
+		left: 150px;
+		top: 0;
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 500px) and (min-width: 460px){
+	#slider{
+		display: none;
+	}
+	
+	#title{
+		font-size: 2rem;
+	}
+	
+	.circle{
+		border-radius: 20px;
+		height: 250px;
+		width: 100%;
+	}
+	
+	.circle h2 {
+    	top: 20px;
+	}
+	
+	.circle img {
+    	left: 180px;
+    	position: relative;
+    	top: 30px;
+    	width: 15%;
+	}
+	
+	#underground img {
+    	left: 100px;
+    	top: 25px;
+    	width: 50%;
+	}
+}
+
+@media all and (max-width: 459px) and (min-width: 320px){
+	#slider{
+		display: none;
+	}
+	
+	#title{
+		font-size: 2rem;
+	}
+	
+	.circle{
+		border-radius: 20px;
+		height: 250px;
+		width: 100%;
+	}
+	
+	.circle h2 {
+    	top: 20px;
+	}
+	
+	.circle img {
+    	left: 120px;
+    	position: relative;
+    	top: 30px;
+    	width: 20%;
+	}
+	
+	#underground img {
+    	left: 75px;
+    	top: 25px;
+    	width: 50%;
+	}
+
+}
+	
